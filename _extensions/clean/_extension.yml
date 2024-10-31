@@ -23,6 +23,7 @@ contributes:
       theme:
         - cosmo
         - resources/style.scss
+      css: resources/fonts.css
       html-math-method: katex
       embed-resources: true
     docx:

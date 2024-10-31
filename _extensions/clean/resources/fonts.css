@@ -1,0 +1,57 @@
+@font-face {
+	font-family: "Source Serif";
+	src:
+		url("fonts/SourceSerif4Variable-Roman.otf.woff2") format("woff2") tech(variations),
+		url("fonts/SourceSerif4Variable-Roman.otf.woff2") format("woff2-variations");
+	font-weight: 200 900;
+	font-style: upright;
+	font-display: "fallback";
+}
+@font-face {
+	font-family: "Source Serif";
+	src:
+		url("fonts/SourceSerif4Variable-Italic.otf.woff2") format("woff2") tech(variations),
+		url("fonts/SourceSerif4Variable-Italic.otf.woff2") format("woff2-variations");
+	font-weight: 200 900;
+	font-style: italic;
+	font-display: "swap";
+}
+
+@font-face {
+	font-family: "Source Sans";
+	src:
+		url("fonts/SourceSans3VF-Upright.otf.woff2") format("woff2") tech(variations),
+		url("fonts/SourceSans3VF-Upright.otf.woff2") format("woff2-variations");
+	font-weight: 200 900;
+	font-style: upright;
+	font-display: "fallback";
+}
+@font-face {
+	font-family: "Source Sans";
+	src:
+		url("fonts/SourceSans3VF-Italic.otf.woff2") format("woff2")  tech(variations),
+		url("fonts/SourceSans3VF-Italic.otf.woff2") format("woff2-variations");
+	font-weight: 200 900;
+	font-style: italic;
+	font-display: "swap";
+}
+
+@font-face {
+	font-family: "Source Code Pro";
+	src:
+		url("fonts/SourceCodeVF-Upright.otf.woff2") format("woff2") tech(variations),
+		url("fonts/SourceCodeVF-Upright.otf.woff2") format("woff2-variations");
+	font-weight: 200 900;
+	font-style: upright;
+	size-adjust: 105%;
+	font-display: "fallback";
+}
+@font-face {
+	font-family: "Source Code Pro";
+	src:
+		url("fonts/SourceCodeVF-Italic.otf.woff2") format("woff2")  tech(variations),
+		url("fonts/SourceCodeVF-Italic.otf.woff2") format("woff2-variations");
+	font-weight: 200 900;
+	font-style: italic;
+	size-adjust: 105%;
+}
