@@ -1,3 +1,6 @@
 # outputs
 *.docx
 *.html
+
+# allow resources
+!reference.docx
