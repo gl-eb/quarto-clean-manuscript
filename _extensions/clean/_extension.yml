@@ -16,15 +16,15 @@ contributes:
             reference-prefix: Figure S
             space-before-numbering: false
       citeproc: true
-      csl: csl/elife.csl
-      embed-resources: true
+      csl: resources/csl/elife.csl
       execute:
         echo: false
     html:
       theme:
         - cosmo
-        - style.scss
+        - resources/style.scss
       html-math-method: katex
+      embed-resources: true
     docx:
-      reference-doc: reference.docx
+      reference-doc: resources/reference.docx
       number-sections: true

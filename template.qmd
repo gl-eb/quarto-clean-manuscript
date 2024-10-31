@@ -6,8 +6,8 @@ author:
     orcid: 0000-0002-7734-3824
 date: last-modified
 format:
-  clean-manuscript-html: default
-  clean-manuscript-docx: default
+  clean-html: default
+  clean-docx: default
 ---
 
 This template was designed for long-form text documents.
@@ -31,8 +31,8 @@ title: Your Document Title
 author: Name
 date: last-modified
 format:
-  clean-manuscript-html: default
-  clean-manuscript-docx: default
+  clean-html: default
+  clean-docx: default
 ---
 ```
 

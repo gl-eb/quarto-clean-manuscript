@@ -21,8 +21,8 @@ title: Your Document Title
 author: Name
 date: last-modified
 format:
-  clean-manuscript-html: default
-  clean-manuscript-docx: default
+  clean-html: default
+  clean-docx: default
 ---
 ```
 

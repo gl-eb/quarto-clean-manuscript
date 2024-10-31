@@ -26,8 +26,8 @@ $section-border-width: 2px;
 @font-face {
 	font-family: "Source Serif";
 	src:
-		url("_extensions/clean-manuscript/fonts/SourceSerif4Variable-Roman.otf.woff2") format("woff2") tech(variations),
-		url("_extensions/clean-manuscript/fonts/SourceSerif4Variable-Roman.otf.woff2") format("woff2-variations");
+		url("_extensions/clean/resources/fonts/SourceSerif4Variable-Roman.otf.woff2") format("woff2") tech(variations),
+		url("_extensions/clean/resources/fonts/SourceSerif4Variable-Roman.otf.woff2") format("woff2-variations");
 	font-weight: 200 900;
 	font-style: upright;
 	font-display: "fallback";
@@ -35,8 +35,8 @@ $section-border-width: 2px;
 @font-face {
 	font-family: "Source Serif";
 	src:
-		url("_extensions/clean-manuscript/fonts/SourceSerif4Variable-Italic.otf.woff2") format("woff2") tech(variations),
-		url("_extensions/clean-manuscript/fonts/SourceSerif4Variable-Italic.otf.woff2") format("woff2-variations");
+		url("_extensions/clean/resources/fonts/SourceSerif4Variable-Italic.otf.woff2") format("woff2") tech(variations),
+		url("_extensions/clean/resources/fonts/SourceSerif4Variable-Italic.otf.woff2") format("woff2-variations");
 	font-weight: 200 900;
 	font-style: italic;
 	font-display: "swap";
@@ -45,8 +45,8 @@ $section-border-width: 2px;
 @font-face {
 	font-family: "Source Sans";
 	src:
-		url("_extensions/clean-manuscript/fonts/SourceSans3VF-Upright.otf.woff2") format("woff2") tech(variations),
-		url("_extensions/clean-manuscript/fonts/SourceSans3VF-Upright.otf.woff2") format("woff2-variations");
+		url("_extensions/clean/resources/fonts/SourceSans3VF-Upright.otf.woff2") format("woff2") tech(variations),
+		url("_extensions/clean/resources/fonts/SourceSans3VF-Upright.otf.woff2") format("woff2-variations");
 	font-weight: 200 900;
 	font-style: upright;
 	font-display: "fallback";
@@ -54,8 +54,8 @@ $section-border-width: 2px;
 @font-face {
 	font-family: "Source Sans";
 	src:
-		url("_extensions/clean-manuscript/fonts/SourceSans3VF-Italic.otf.woff2") format("woff2")  tech(variations),
-		url("_extensions/clean-manuscript/fonts/SourceSans3VF-Italic.otf.woff2") format("woff2-variations");
+		url("_extensions/clean/resources/fonts/SourceSans3VF-Italic.otf.woff2") format("woff2")  tech(variations),
+		url("_extensions/clean/resources/fonts/SourceSans3VF-Italic.otf.woff2") format("woff2-variations");
 	font-weight: 200 900;
 	font-style: italic;
 	font-display: "swap";
@@ -64,8 +64,8 @@ $section-border-width: 2px;
 @font-face {
 	font-family: "Source Code Pro";
 	src:
-		url("_extensions/clean-manuscript/fonts/SourceCodeVF-Upright.otf.woff2") format("woff2") tech(variations),
-		url("_extensions/clean-manuscript/fonts/SourceCodeVF-Upright.otf.woff2") format("woff2-variations");
+		url("_extensions/clean/resources/fonts/SourceCodeVF-Upright.otf.woff2") format("woff2") tech(variations),
+		url("_extensions/clean/resources/fonts/SourceCodeVF-Upright.otf.woff2") format("woff2-variations");
 	font-weight: 200 900;
 	font-style: upright;
 	size-adjust: 105%;
@@ -74,8 +74,8 @@ $section-border-width: 2px;
 @font-face {
 	font-family: "Source Code Pro";
 	src:
-		url("_extensions/clean-manuscript/fonts/SourceCodeVF-Italic.otf.woff2") format("woff2")  tech(variations),
-		url("_extensions/clean-manuscript/fonts/SourceCodeVF-Italic.otf.woff2") format("woff2-variations");
+		url("_extensions/clean/resources/fonts/SourceCodeVF-Italic.otf.woff2") format("woff2")  tech(variations),
+		url("_extensions/clean/resources/fonts/SourceCodeVF-Italic.otf.woff2") format("woff2-variations");
 	font-weight: 200 900;
 	font-style: italic;
 	size-adjust: 105%;
