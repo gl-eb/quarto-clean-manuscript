@@ -1,0 +1,241 @@
+/*-- scss:defaults --*/
+
+$grid-body-width: 650px !default;
+$grid-margin-width: 325px !default;
+
+$body-color: rgb(35, 37, 38);
+$code-background-color: rgb(245, 245, 245);
+
+$font-family-body: 'Source Serif';
+$font-family-sans: 'Source Sans';
+$font-family-monospace: 'Source Code Pro';
+$web-font-path: false;
+
+$font-size-body: 20px;
+$font-weight-body: 400;
+$font-weight-headings: 600;
+$font-optical-size-small: 16;
+$font-optical-size-heading: 32;
+
+$section-border-color: rgb(222, 226, 230);
+$section-border-style: solid;
+$section-border-width: 2px;
+
+/*-- scss:rules --*/
+
+@font-face {
+	font-family: "Source Serif";
+	src:
+		url("_extensions/clean-manuscript/fonts/SourceSerif4Variable-Roman.otf.woff2") format("woff2") tech(variations),
+		url("_extensions/clean-manuscript/fonts/SourceSerif4Variable-Roman.otf.woff2") format("woff2-variations");
+	font-weight: 200 900;
+	font-style: upright;
+	font-display: "fallback";
+}
+@font-face {
+	font-family: "Source Serif";
+	src:
+		url("_extensions/clean-manuscript/fonts/SourceSerif4Variable-Italic.otf.woff2") format("woff2") tech(variations),
+		url("_extensions/clean-manuscript/fonts/SourceSerif4Variable-Italic.otf.woff2") format("woff2-variations");
+	font-weight: 200 900;
+	font-style: italic;
+	font-display: "swap";
+}
+
+@font-face {
+	font-family: "Source Sans";
+	src:
+		url("_extensions/clean-manuscript/fonts/SourceSans3VF-Upright.otf.woff2") format("woff2") tech(variations),
+		url("_extensions/clean-manuscript/fonts/SourceSans3VF-Upright.otf.woff2") format("woff2-variations");
+	font-weight: 200 900;
+	font-style: upright;
+	font-display: "fallback";
+}
+@font-face {
+	font-family: "Source Sans";
+	src:
+		url("_extensions/clean-manuscript/fonts/SourceSans3VF-Italic.otf.woff2") format("woff2")  tech(variations),
+		url("_extensions/clean-manuscript/fonts/SourceSans3VF-Italic.otf.woff2") format("woff2-variations");
+	font-weight: 200 900;
+	font-style: italic;
+	font-display: "swap";
+}
+
+@font-face {
+	font-family: "Source Code Pro";
+	src:
+		url("_extensions/clean-manuscript/fonts/SourceCodeVF-Upright.otf.woff2") format("woff2") tech(variations),
+		url("_extensions/clean-manuscript/fonts/SourceCodeVF-Upright.otf.woff2") format("woff2-variations");
+	font-weight: 200 900;
+	font-style: upright;
+	size-adjust: 105%;
+	font-display: "fallback";
+}
+@font-face {
+	font-family: "Source Code Pro";
+	src:
+		url("_extensions/clean-manuscript/fonts/SourceCodeVF-Italic.otf.woff2") format("woff2")  tech(variations),
+		url("_extensions/clean-manuscript/fonts/SourceCodeVF-Italic.otf.woff2") format("woff2-variations");
+	font-weight: 200 900;
+	font-style: italic;
+	size-adjust: 105%;
+}
+
+
+:root body {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	text-decoration-skip-ink: auto;
+    font-family: $font-family-body, 'Charter', serif;
+    font-kerning: auto;
+    font-variant-numeric: lining-nums;
+	font-weight: $font-weight-body;
+	font-optical-sizing: none;
+    font-size: $font-size-body;
+    color: $body-color;
+    line-height: 1.45;
+    hyphens: auto;
+	hyphenate-limit-chars: 7 4 3;
+    // hyphenate-limit-lines: 2;
+    // hyphenate-limit-zone: 8%;
+    // hyphenate-limit-last: always;
+	-webkit-hyphens: auto;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-after: 3;
+    -webkit-hyphenate-limit-lines: 2;
+}
+
+body, h1, h2, h3, h4, h5, h6, address, p, hr, pre, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption, div, table, caption, form, fieldset {
+	margin: 0;
+}
+
+pre, code, var, samp, kbd, h1, h2, h3, h4 {
+    -webkit-hyphens: manual;
+    hyphens: manual;
+}
+
+h1, h2, h3, h4 {
+    font-variant-numeric: lining-nums;
+}
+h1 {
+	font-weight: $font-weight-headings;
+    font-variation-settings: "opsz" $font-optical-size-heading;
+	font-variant-ligatures: discretionary-ligatures;
+}
+h2 {
+	font-weight: $font-weight-headings;
+	font-optical-sizing: none;
+	border: 0;
+	padding: 0;
+	margin-block-start: 1.7rem;
+	margin-block-end: 0.7rem;
+}
+h3 {
+	font-weight: $font-weight-headings;
+	font-optical-sizing: none;
+    opacity: 1.0;
+	margin-block-start: 1.2rem;
+	margin-block-end: 0.5rem;
+}
+h3 :is(h2 + *) {
+	margin-block-start: 0.7rem;
+}
+
+p {
+	margin-block-end: 0.5rem;
+}
+
+b, strong {
+	font-weight: 650;
+	font-optical-sizing: none;
+}
+
+a {
+	color: rgb(31, 78, 182);
+    text-decoration: none;
+}
+
+a:hover{
+	color: rgb(39, 97, 227);
+}
+
+pre, code, kbd, samp {
+    font-family: $font-family-monospace, monospace !important;
+    font-weight: 500 !important;
+    font-variant-numeric: normal !important;
+}
+
+code:not(.sourceCode) {
+	color: $body-color;
+	background: $code-background-color !important;
+	border-radius: 6px;
+	padding: 0em .25em !important;
+}
+
+@supports ( font-variant-position: sub ) {
+    sub, .sub {
+        font-variant-position: sub;
+        vertical-align: baseline;
+        font-size: 100%;
+        line-height: inherit;
+		bottom: inherit;
+    }
+}
+
+.allsmcp {
+	font-variant-caps: all-small-caps;
+}
+
+header.quarto-title-block#title-block-header {
+	border-bottom-color: $section-border-color;
+	border-bottom-style: $section-border-style;
+	border-bottom-width: $section-border-width;
+	padding-bottom: 0.5rem;
+	margin-block-end: 1.5rem;
+}
+
+.quarto-title-meta-heading,
+#toc-title {
+	font-weight: $font-weight-body;
+	font-optical-sizing: none;
+    text-transform: none !important;
+    font-variant-caps: small-caps;
+	letter-spacing: 0.03em;
+	opacity: 0.8;
+}
+
+.nav-link {
+	font-weight: $font-weight-headings;
+    font-variation-settings: "opsz" $font-optical-size-small;
+}
+
+.panel-caption,
+.figure-caption,
+.subfigure-caption,
+.table-caption,
+figcaption, caption {
+	font-weight: $font-weight-body;
+    font-variation-settings: "opsz" $font-optical-size-small;
+    font-size: 0.9rem;
+    color: #373a3c
+}
+
+table {
+    font-family: $font-family-sans, sans-serif !important;
+    font-size: 0.9em !important;
+	th, td {
+		font-variant-numeric: tabular-nums lining-nums !important;
+	}
+}
+
+.gt_row {
+    border: none !important;
+}
+
+#quarto-appendix {
+	border-top-color: $section-border-color;
+	border-top-style: $section-border-style;
+	border-top-width: $section-border-width !important;
+	padding-top: 1rem !important;
+}
