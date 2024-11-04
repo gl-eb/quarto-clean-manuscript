@@ -22,6 +22,7 @@ author: Name
 date: last-modified
 format:
   clean-html: default
+  clean-typst: default
   clean-docx: default
 ---
 ```
@@ -47,3 +48,4 @@ These two styles are author-date and numeric styles respectively.
 ## Example
 
 Here is the source code for a minimal sample document: [template.qmd](template.qmd).
+A rendered html of the example can be found [here](http://www.gl-eb.me/quarto-clean-manuscript/), where you can also download the same document as Typst-rendered PDF and docx.
