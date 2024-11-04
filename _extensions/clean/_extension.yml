@@ -35,7 +35,7 @@ contributes:
         x: 30mm
         top: 25mm
         bottom: 30mm
-      fontsize: "12pt"
+      fontsize: "11pt"
       number-sections: true
     docx:
       reference-doc: resources/reference.docx

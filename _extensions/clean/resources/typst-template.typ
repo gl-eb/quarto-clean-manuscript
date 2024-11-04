@@ -10,7 +10,7 @@
   lang: "en",
   region: "UK",
   font: (),
-  fontsize: 12pt,
+  fontsize: 11pt,
   sectionnumbering: none,
   toc: false,
   doc,
