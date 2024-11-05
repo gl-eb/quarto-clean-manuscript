@@ -30,13 +30,16 @@ contributes:
       template-partials:
         - resources/typst-show.typ
         - resources/typst-template.typ
+        - resources/biblio.typ
       paper: a4
       margin:
         x: 30mm
         top: 25mm
         bottom: 30mm
       fontsize: "11pt"
+      lineheight: 1.7
       number-sections: true
+      bibliography-title: References
     docx:
       reference-doc: resources/reference.docx
       number-sections: true

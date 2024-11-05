@@ -2,7 +2,7 @@
 // the source code for a typst template) and a 'typst-show.typ' which calls the
 // template's function (forwarding Pandoc metadata values as required)
 
-#show: doc => minimal(
+#show: doc => clean(
 $if(title)$
   title: [$title$],
 $endif$
@@ -13,9 +13,23 @@ $if(by-author)$
   authors: (
 $for(by-author)$
 $if(it.name.literal)$
-    ( name: [$it.name.literal$],
-      affiliation: [$for(it.affiliations)$$it.name$$sep$, $endfor$],
-      email: [$it.email$] ),
+(
+  name: [$it.name.literal$],
+  last: [$it.name.family$],
+  $if(it.affiliations/first)$
+    $for(it.affiliations/first)$
+      department: $if(it.department)$[$it.department$]$else$none$endif$,
+      university: $if(it.name)$[$it.name$]$else$none$endif$,
+      location: [$if(it.city)$$it.city$$if(it.country)$, $endif$$endif$$if(it.country)$$it.country$$endif$],
+    $endfor$
+  $endif$
+  $if(it.email)$
+    email: [$it.email$],
+  $endif$
+  $if(it.orcid)$
+    orcid: "$it.orcid$"
+  $endif$
+),
 $endif$
 $endfor$
     ),
@@ -43,6 +57,15 @@ $if(mainfont)$
 $endif$
 $if(fontsize)$
   fontsize: $fontsize$,
+$endif$
+$if(monofont)$
+  monofont: ("$monofont$",),
+$endif$
+$if(lineheight)$
+  lineheight: $lineheight$,
+$endif$
+$if(linkcolor)$
+  linkcolor: "$linkcolor$",
 $endif$
 $if(section-numbering)$
   sectionnumbering: "$section-numbering$",

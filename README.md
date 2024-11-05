@@ -1,19 +1,29 @@
 # Clean Manuscript
 
 This template was designed for long-form text documents.
+The three formats (html, typst, docx) were not designed to be as close to eachother visually as possible.
+Their design was informed by partical decisions and according to the capabilities of the respective file types.
+The Typst template is based on my own [minimal doc template](https://github.com/gl-eb/minimal-doc) and uses code written by Christopher T. Kenny for his own [ctk-article template](https://github.com/christopherkenny/ctk-article/).
 While I use it in an academic context, it should be versatile enough for anyone to use.
 I tried to follow established typographic principles (e.g. in terms of line length and height) to enhance readability.
-Personal taste also played a big role, so feel free to fork this repository and tweak the template.
+Nevertheless, it is fairly opinionated and does not provide easy customization through YAML options.
+Feel free to fork this repository and tweak the template (while complying with the [MIT license](LICENSE)).
 
-## Installing
+## Installation
+
+The following command will install the extension and create an example qmd file that you can use as a starting place for your document.
 
 ```bash
 quarto use template gl-eb/quarto-clean-manuscript
 ```
 
-This will install the extension and create an example qmd file that you can use as a starting place for your document.
+Should you want to install the extension in an already existing Quarto project, use the following command:
 
-## Using
+```bash
+quarto add gl-eb/quarto-clean-manuscript
+```
+
+## Usage
 
 ```yaml
 ---
@@ -27,7 +37,15 @@ format:
 ---
 ```
 
-You can learn more about controlling the appearance of HTML output here: <https://quarto.org/docs/output-formats/html-basics.html>
+None of the formats were designed to be easily customizable.
+Should you want to do so anyways, refer to the following files:
+
+- The style of the `clean-html` format is determined by custom stylesheets and fonts
+- The `clean-docx` format is contained within a reference document [reference.docx](_extensions/clean/resources/reference.docx)
+- The `clean-typst` format is controlled from the [typst-show.typ](_extensions/clean/resources/typst-show.typ), [typst-template.typ](_extensions/clean/resources/typst-template.typ), and [biblio.typ](_extensions/clean/resources/biblio.typ) files
+
+You can also try using Quarto's YAML options, but your mileage may vary since some design choices are hard coded.
+Refer to the [HTML](https://quarto.org/docs/output-formats/html-basics.html), [Typst](https://quarto.org/docs/output-formats/typst.html), and [MS Word / docx](https://quarto.org/docs/output-formats/ms-word.html) guides.
 
 ## Resources
 
