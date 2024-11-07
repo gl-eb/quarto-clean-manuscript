@@ -23,6 +23,8 @@ contributes:
         - cosmo
         - resources/style.scss
       css: resources/fonts.css
+      template-partials:
+        - resources/_title-meta-author.html
       html-math-method: katex
       embed-resources: true
       toc: true

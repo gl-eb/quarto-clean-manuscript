@@ -146,6 +146,14 @@ header.quarto-title-block#title-block-header {
 	opacity: 0.8;
 }
 
+.quarto-title-author-orcid {
+	svg {
+		margin-top: -0.2em;
+		height: 0.8em;
+		width: 0.8em;
+	}
+}
+
 .nav-link {
 	font-weight: $font-weight-headings;
     font-variation-settings: "opsz" $font-optical-size-small;
