@@ -1,6 +1,6 @@
 ---
 title: Clean Manuscript
-subtitle: v0.3.0
+subtitle: v0.4.0
 author:
   - name: Gleb Ebert
     orcid: 0000-0002-7734-3824
