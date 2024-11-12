@@ -28,23 +28,23 @@ $section-border-width: 2px;
 	-webkit-text-size-adjust: none;
 	text-size-adjust: none;
 	text-decoration-skip-ink: auto;
-    font-family: $font-family-body, 'Charter', serif;
-    font-kerning: auto;
-    font-variant-numeric: lining-nums;
+	font-family: $font-family-body, 'Charter', serif;
+	font-kerning: auto;
+	font-variant-numeric: lining-nums;
 	font-weight: $font-weight-body;
 	font-optical-sizing: none;
-    font-size: $font-size-body;
-    color: $body-color;
-    line-height: 1.45;
-    hyphens: auto;
+	font-size: $font-size-body;
+	color: $body-color;
+	line-height: 1.45;
+	hyphens: auto;
 	hyphenate-limit-chars: 7 4 3;
-    // hyphenate-limit-lines: 2;
-    // hyphenate-limit-zone: 8%;
-    // hyphenate-limit-last: always;
+	// hyphenate-limit-lines: 2;
+	// hyphenate-limit-zone: 8%;
+	// hyphenate-limit-last: always;
 	-webkit-hyphens: auto;
-    -webkit-hyphenate-limit-before: 4;
-    -webkit-hyphenate-limit-after: 3;
-    -webkit-hyphenate-limit-lines: 2;
+	-webkit-hyphenate-limit-before: 4;
+	-webkit-hyphenate-limit-after: 3;
+	-webkit-hyphenate-limit-lines: 2;
 }
 
 body, h1, h2, h3, h4, h5, h6, address, p, hr, pre, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption, div, table, caption, form, fieldset {
@@ -52,17 +52,17 @@ body, h1, h2, h3, h4, h5, h6, address, p, hr, pre, blockquote, ol, ul, li, dl, d
 }
 
 pre, code, var, samp, kbd, h1, h2, h3, h4 {
-    -webkit-hyphens: manual;
-    hyphens: manual;
+	-webkit-hyphens: manual;
+	hyphens: manual;
 }
 
 h1, h2, h3, h4 {
-    font-variant-numeric: lining-nums;
+	font-variant-numeric: lining-nums;
 }
 h1 {
 	font-size: 1.8rem;
 	font-weight: $font-weight-headings;
-    font-variation-settings: "opsz" $font-optical-size-heading;
+	font-variation-settings: "opsz" $font-optical-size-heading;
 	font-variant-ligatures: discretionary-ligatures;
 	margin-block-start: 1.9rem;
 	margin-block-end: 0.8rem;
@@ -94,7 +94,7 @@ b, strong {
 
 a {
 	color: rgb(31, 78, 182);
-    text-decoration: none;
+	text-decoration: none;
 }
 
 a:hover{
@@ -102,9 +102,9 @@ a:hover{
 }
 
 pre, code, kbd, samp {
-    font-family: $font-family-monospace, monospace !important;
-    font-weight: 500 !important;
-    font-variant-numeric: normal !important;
+	font-family: $font-family-monospace, monospace !important;
+	font-weight: 500 !important;
+	font-variant-numeric: normal !important;
 }
 
 code:not(.sourceCode) {
@@ -115,13 +115,13 @@ code:not(.sourceCode) {
 }
 
 @supports ( font-variant-position: sub ) {
-    sub, .sub {
-        font-variant-position: sub;
-        vertical-align: baseline;
-        font-size: 100%;
-        line-height: inherit;
+	sub, .sub {
+		font-variant-position: sub;
+		vertical-align: baseline;
+		font-size: 100%;
+		line-height: inherit;
 		bottom: inherit;
-    }
+	}
 }
 
 .allsmcp {
@@ -140,8 +140,8 @@ header.quarto-title-block#title-block-header {
 #toc-title {
 	font-weight: $font-weight-body;
 	font-optical-sizing: none;
-    text-transform: none !important;
-    font-variant-caps: small-caps;
+	text-transform: none !important;
+	font-variant-caps: small-caps;
 	letter-spacing: 0.03em;
 	opacity: 0.8;
 }
@@ -156,7 +156,7 @@ header.quarto-title-block#title-block-header {
 
 .nav-link {
 	font-weight: $font-weight-headings;
-    font-variation-settings: "opsz" $font-optical-size-small;
+	font-variation-settings: "opsz" $font-optical-size-small;
 }
 
 .panel-caption,
@@ -166,21 +166,21 @@ header.quarto-title-block#title-block-header {
 figcaption, caption {
 	text-align: left !important;
 	font-weight: $font-weight-body;
-    font-variation-settings: "opsz" $font-optical-size-small;
-    font-size: 0.9rem;
-    color: #373a3c
+	font-variation-settings: "opsz" $font-optical-size-small;
+	font-size: 0.9rem;
+	color: #373a3c
 }
 
 table {
-    font-family: $font-family-sans, sans-serif !important;
-    font-size: 0.9em !important;
+	font-family: $font-family-sans, sans-serif !important;
+	font-size: 0.9em !important;
 	th, td {
 		font-variant-numeric: tabular-nums lining-nums !important;
 	}
 }
 
 .gt_row {
-    border: none !important;
+	border: none !important;
 }
 
 #quarto-appendix {
