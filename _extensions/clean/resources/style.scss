@@ -164,6 +164,7 @@ header.quarto-title-block#title-block-header {
 .subfigure-caption,
 .table-caption,
 figcaption, caption {
+	text-align: left !important;
 	font-weight: $font-weight-body;
     font-variation-settings: "opsz" $font-optical-size-small;
     font-size: 0.9rem;
