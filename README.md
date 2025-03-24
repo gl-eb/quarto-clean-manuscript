@@ -1,8 +1,8 @@
 # Clean Manuscript
 
 This template was designed for long-form text documents.
-The three formats (html, typst, docx) were not designed to be as close to eachother visually as possible.
-Their design was informed by partical decisions and according to the capabilities of the respective file types.
+The three formats (html, typst, docx) were not designed to be as close to each other visually as possible.
+Their design was informed by practical decisions and according to the capabilities of the respective file types.
 The Typst template is based on my own [minimal doc template](https://github.com/gl-eb/minimal-doc) and uses code written by Christopher T. Kenny for his own [ctk-article template](https://github.com/christopherkenny/ctk-article/).
 While I use it in an academic context, it should be versatile enough for anyone to use.
 I tried to follow established typographic principles (e.g. in terms of line length and height) to enhance readability.
@@ -59,7 +59,7 @@ They are licensed under the [SIL Open Font License](https://openfontlicense.org/
 The docx format uses the Charter font, which comes preinstalled with macOS.
 You can download it from Matthew Butterick's excellent [Practical Typography website](https://practicaltypography.com/charter.html)
 
-The eLife and Science [citation style language](https://citationstyles.org/.) styles also come bundled with this extention.
+The eLife and Science [citation style language](https://citationstyles.org/.) styles also come bundled with this extension.
 Their are licenses under the [Creative Commons Attribution-ShareAlike 3.0 Unported license](https://creativecommons.org/licenses/by-sa/3.0/).
 These two styles are author-date and numeric styles respectively.
 
