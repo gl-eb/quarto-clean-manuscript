@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.2
+
+- Fix a regression introduced in 0.5.1
+
 ## 0.5.1
 
 - Replace `image.decode` in favour of `image` due to the former being deprecated starting with Typst 0.13.0. This also necessitates updating the minimum Quarto version to 1.7.0, since that is when Typst was updated to 0.13.0
