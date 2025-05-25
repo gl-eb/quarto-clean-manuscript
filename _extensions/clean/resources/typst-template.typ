@@ -170,7 +170,7 @@
               height: 8pt,
               baseline: 0.75pt,
               outset: (y: 1pt),
-              image.decode(orcid_svg)
+              image(orcid_svg)
             )
           ]
         ]
