@@ -1,5 +1,9 @@
 # Changelog
 
+## development version
+
+- Add bottom margin to lists
+
 ## 0.5.2
 
 - Fix a regression introduced in 0.5.1
