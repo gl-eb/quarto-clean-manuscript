@@ -2,10 +2,12 @@
 
 ## development version
 
-- Allow addition of date to page header
-- Improve line heights in Typst format
-- Add bottom margin to lists
-- Adjust abstract styling
+- `clean-html`
+  - Add bottom margin to lists
+- `clean-typst`
+  - Allow addition of date to page header
+  - Improve line height
+  - Adjust abstract styling
 
 ## 0.5.2
 
