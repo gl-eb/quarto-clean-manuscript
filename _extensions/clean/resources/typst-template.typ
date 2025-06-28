@@ -205,7 +205,7 @@
     if abstract != none {
       block(inset: 2em)[
       #text(weight: "medium")[Abstract]
-      #h(1em)
+      #h(0.5em)
       #text(top-edge: top-edge, bottom-edge: bottom-edge)[#abstract]
       ]
     }

@@ -4,6 +4,7 @@
 
 - Improve line heights in Typst format
 - Add bottom margin to lists
+- Adjust abstract styling
 
 ## 0.5.2
 
