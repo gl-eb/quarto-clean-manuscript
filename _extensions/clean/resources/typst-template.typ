@@ -62,6 +62,7 @@
   subtitle: none,
   authors: none,
   date: none,
+  date-in-header: true,
   abstract: none,
   cols: 1,
   margin: (x: 30mm, top: 25mm, bottom: 30mm),
@@ -83,10 +84,20 @@
   let top-edge = 0.7em
   let bottom-edge = -0.3em
 
+  // set header
+  let header = none
+  if date-in-header {
+    header = date
+  }
+
   set page(
     paper: paper,
     margin: margin,
-    numbering: "1"
+    numbering: "1",
+    header: align(right)[
+      #set text(fontsize - 1pt)
+      #header
+    ]
   )
   set par(
     leading: leading,
@@ -156,7 +167,7 @@
           v(0em)
           text(subtitle, weight: "semibold", size: 1.25em)
         }
-        #if date != none {
+        #if date != none and not date-in-header {
           v(0em)
           date
         }

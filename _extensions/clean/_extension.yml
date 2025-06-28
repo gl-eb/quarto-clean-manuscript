@@ -41,6 +41,7 @@ contributes:
       fontsize: "11pt"
       lineheight: 1.45
       number-sections: true
+      date-in-header: true
       bibliography-title: References
     docx:
       reference-doc: resources/reference.docx

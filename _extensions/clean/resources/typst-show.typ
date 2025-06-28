@@ -36,6 +36,7 @@ $endfor$
 $endif$
 $if(date)$
   date: [$date$],
+  date-in-header: $date-in-header$,
 $endif$
 $if(lang)$
   lang: "$lang$",
