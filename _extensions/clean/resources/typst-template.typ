@@ -77,13 +77,19 @@
   toc: false,
   doc,
 ) = {
+  // set line height parameters
+  // https://github.com/typst/typst/issues/106#issuecomment-2041051807
+  let leading = lineheight * 1em - 1em
+  let top-edge = 0.7em
+  let bottom-edge = -0.3em
+
   set page(
     paper: paper,
     margin: margin,
     numbering: "1"
   )
   set par(
-    leading: lineheight * 1em - 1em,
+    leading: leading,
     justify: true
   )
   set text(
@@ -99,6 +105,7 @@
     stroke: none
   )
   show link: set text(fill: rgb(31, 78, 182))
+  show raw: set par(leading: calc.max(0em, leading - 0.2em))
   show raw: set text(font: monofont)
   show figure: set block(breakable: true)
 
@@ -197,7 +204,9 @@
 
     if abstract != none {
       block(inset: 2em)[
-      #text(weight: "medium")[Abstract] #h(1em) #abstract
+      #text(weight: "medium")[Abstract]
+      #h(1em)
+      #text(top-edge: top-edge, bottom-edge: bottom-edge)[#abstract]
       ]
     }
 
@@ -212,6 +221,11 @@
 
     v(0.25em)
   }
+
+  set text(
+    top-edge: top-edge,
+    bottom-edge: bottom-edge
+  )
 
   if cols == 1 {
     doc

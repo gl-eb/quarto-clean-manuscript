@@ -39,7 +39,7 @@ contributes:
         top: 25mm
         bottom: 30mm
       fontsize: "11pt"
-      lineheight: 1.7
+      lineheight: 1.45
       number-sections: true
       bibliography-title: References
     docx:

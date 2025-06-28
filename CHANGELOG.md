@@ -2,6 +2,7 @@
 
 ## development version
 
+- Improve line heights in Typst format
 - Add bottom margin to lists
 
 ## 0.5.2
