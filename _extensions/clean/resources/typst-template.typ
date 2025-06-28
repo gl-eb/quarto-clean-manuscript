@@ -105,7 +105,7 @@
     stroke: none
   )
   show link: set text(fill: rgb(31, 78, 182))
-  show raw: set par(leading: calc.max(0em, leading - 0.2em))
+  show raw.where(block: true): set par(leading: calc.max(0em, leading - 0.2em))
   show raw: set text(font: monofont)
   show figure: set block(breakable: true)
 
