@@ -64,18 +64,30 @@
   date: none,
   date-in-header: true,
   abstract: none,
+  abstract-title: none,
   cols: 1,
   margin: (x: 30mm, top: 25mm, bottom: 30mm),
   paper: "a4",
   lang: "en",
   region: "UK",
-  font: (),
+  font: "libertinus serif",
   fontsize: 11pt,
   monofont: (),
   lineheight: 1.7,
   linkcolor: rgb(31, 78, 182),
+  title-size: 1.8em,
+  subtitle-size: 1.25em,
+  heading-family: none,
+  heading-weight: "bold",
+  heading-style: "normal",
+  heading-color: black,
+  heading-line-height: 0.65em,
   sectionnumbering: "1.1.1",
+  pagenumbering: "1",
   toc: false,
+  toc_title: none,
+  toc_depth: none,
+  toc_indent: 1.5em,
   doc,
 ) = {
   // set line height parameters
@@ -93,7 +105,7 @@
   set page(
     paper: paper,
     margin: margin,
-    numbering: "1",
+    numbering: pagenumbering,
     header: align(right)[
       #set text(fontsize - 1pt)
       #header
@@ -162,13 +174,24 @@
   if title != none {
     align(center)[
       #block(inset: 1em)[
-        #text(weight: "bold", size: 1.8em)[#title]
-        #if subtitle != none {
-          v(0em)
-          text(subtitle, weight: "semibold", size: 1.25em)
+        #set par(leading: heading-line-height)
+        #if (heading-family != none or heading-weight != "bold" or heading-style != "normal"
+            or heading-color != black) {
+          set text(font: heading-family, weight: heading-weight, style: heading-style, fill: heading-color)
+          text(size: title-size)[#title]
+          if subtitle != none {
+            parbreak()
+            text(size: subtitle-size)[#subtitle]
+          }
+        } else {
+          text(weight: "bold", size: title-size)[#title]
+          if subtitle != none {
+            parbreak()
+            text(weight: "bold", size: subtitle-size)[#subtitle]
+          }
         }
         #if date != none and not date-in-header {
-          v(0em)
+          parbreak()
           date
         }
       ]
@@ -212,25 +235,29 @@
         author_affiliation.join(", ")
       }
     }
+  }
 
-    if abstract != none {
-      block(inset: 2em)[
-      #text(weight: "medium")[Abstract]
+  if abstract != none {
+    block(inset: 2em)[
+      #text(weight: "semibold")[#abstract-title]
       #h(0.5em)
-      #text(top-edge: top-edge, bottom-edge: bottom-edge)[#abstract]
-      ]
-    }
+      #abstract
+    ]
+  }
 
-    if toc {
-      block(above: 0em, below: 2em)[
-      #outline(
-        title: auto,
-        depth: none
-      );
-      ]
+  if toc {
+    let title = if toc_title == none {
+      auto
+    } else {
+      toc_title
     }
-
-    v(0.25em)
+    block(above: 0em, below: 2em)[
+    #outline(
+      title: toc_title,
+      depth: toc_depth,
+      indent: toc_indent
+    );
+    ]
   }
 
   set text(

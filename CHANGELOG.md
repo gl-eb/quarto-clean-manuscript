@@ -8,6 +8,7 @@
   - Allow addition of date to page header
   - Improve line height
   - Adjust abstract styling
+  - Bring partials up to date with Quarto 1.8.17
 
 ## 0.5.2
 
