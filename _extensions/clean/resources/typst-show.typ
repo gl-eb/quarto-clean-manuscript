@@ -34,6 +34,7 @@ $endif$
 $endfor$
     ),
 $endif$
+  title-only: $title-only$,
 $if(date)$
   date: [$date$],
   date-in-header: $date-in-header$,

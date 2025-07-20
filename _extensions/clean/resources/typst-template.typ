@@ -63,6 +63,7 @@
   authors: none,
   date: none,
   date-in-header: true,
+  title-only: false,
   abstract: none,
   abstract-title: none,
   cols: 1,
@@ -100,6 +101,21 @@
   let header = none
   if date-in-header {
     header = date
+  }
+  if title-only {
+    let authors_header = if authors == none {
+      none
+    } else if authors.len() > 1 {
+      authors.first().name + " et al."
+    } else {
+      authors.first().name
+    }
+
+    if header != none {
+      header = authors_header + " — " + header
+    } else if header == none {
+      header = authors_header
+    }
   }
 
   set page(
@@ -179,25 +195,25 @@
             or heading-color != black) {
           set text(font: heading-family, weight: heading-weight, style: heading-style, fill: heading-color)
           text(size: title-size)[#title]
-          if subtitle != none {
+          if not title-only and subtitle != none {
             parbreak()
             text(size: subtitle-size)[#subtitle]
           }
         } else {
           text(weight: "bold", size: title-size)[#title]
-          if subtitle != none {
+          if not title-only and subtitle != none {
             parbreak()
             text(weight: "bold", size: subtitle-size)[#subtitle]
           }
         }
-        #if date != none and not date-in-header {
+        #if date != none and not date-in-header and not title-only {
           parbreak()
           date
         }
       ]
     ]
 
-    if authors != none {
+    if authors != none and not title-only {
       for i in range(authors.len()) {
         let author = authors.at(i)
         if i == 0 [

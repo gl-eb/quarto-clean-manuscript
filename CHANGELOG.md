@@ -5,6 +5,7 @@
 - `clean-html`
   - Add bottom margin to lists
 - `clean-typst`
+  - Allow hiding subtitle, date and authors from title block for a compact document
   - Allow addition of date to page header
   - Improve line height
   - Adjust abstract styling
