@@ -1,5 +1,9 @@
 # Changelog
 
+## development version
+
+- Customize author-year citation style based on eLife (based itself on Elsevier-Harvard)
+
 ## 0.6.0
 
 - `clean-html`
