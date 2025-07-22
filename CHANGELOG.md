@@ -1,6 +1,6 @@
 # Changelog
 
-## development version
+## 0.6.0
 
 - `clean-html`
   - Add bottom margin to lists
