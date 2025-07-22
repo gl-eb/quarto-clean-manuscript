@@ -1,6 +1,6 @@
 title: Clean Manuscript
 author: Gleb Ebert
-version: 0.5.2
+version: 0.6.0
 quarto-required: ">=1.7.0"
 contributes:
   formats:
@@ -16,6 +16,7 @@ contributes:
             space-before-numbering: false
       citeproc: true
       csl: resources/csl/elife.csl
+      # csl: resources/csl/gleb_numeric.csl
       execute:
         echo: false
     html:
@@ -39,8 +40,10 @@ contributes:
         top: 25mm
         bottom: 30mm
       fontsize: "11pt"
-      lineheight: 1.7
+      lineheight: 1.45
       number-sections: true
+      title-only: false
+      date-in-header: true
       bibliography-title: References
     docx:
       reference-doc: resources/reference.docx

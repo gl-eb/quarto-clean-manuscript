@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.6.0
+
+- `clean-html`
+  - Add bottom margin to lists
+- `clean-typst`
+  - Allow hiding subtitle, date and authors from title block for a compact document
+  - Allow addition of date to page header
+  - Improve line height
+  - Adjust abstract styling
+  - Prevent hyphenation of title
+  - Bring partials up to date with Quarto 1.8.17
+- Customize numeric citation style based on Science
+
 ## 0.5.2
 
 - Fix a regression introduced in 0.5.1
