@@ -3,6 +3,7 @@
 ## development version
 
 - Customize author-year citation style based on eLife (based itself on Elsevier-Harvard)
+- Rename numeric citation style file
 
 ## 0.6.0
 

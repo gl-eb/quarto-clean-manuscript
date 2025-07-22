@@ -16,7 +16,7 @@ contributes:
             space-before-numbering: false
       citeproc: true
       csl: resources/csl/author-year.csl
-      # csl: resources/csl/gleb_numeric.csl
+      # csl: resources/csl/numeric.csl
       execute:
         echo: false
     html:
