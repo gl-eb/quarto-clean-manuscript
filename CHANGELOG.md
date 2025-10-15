@@ -5,6 +5,7 @@
 - Customize author-year citation style based on eLife (based itself on Elsevier-Harvard)
 - Rename numeric citation style file
 - Rename CSS class for small caps from `allsmcp` to `smcp`
+- Add custom crossref type for supplementary tables: `subtbl`
 
 ## 0.6.0
 
