@@ -14,10 +14,16 @@ contributes:
             key: supfig
             reference-prefix: Figure S
             space-before-numbering: false
+            latex-env: supfig
           - kind: float
             key: suptbl
             reference-prefix: Table S
             space-before-numbering: false
+            latex-env: suptbl
+          - kind: float
+            reference-prefix: Figure Caption
+            key: cap
+            latex-env: figcptn
       citeproc: true
       csl: resources/csl/author-year.csl
       # csl: resources/csl/numeric.csl
